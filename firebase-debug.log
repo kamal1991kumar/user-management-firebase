@@ -1,0 +1,39 @@
+[debug] [2022-01-08T08:20:52.841Z] ----------------------------------------------------------------------
+[debug] [2022-01-08T08:20:52.842Z] Command:       /Users/kamal_kumar_xeb/.nvm/versions/node/v16.13.0/bin/node /Users/kamal_kumar_xeb/.nvm/versions/node/v16.13.0/bin/firebase deploy
+[debug] [2022-01-08T08:20:52.843Z] CLI Version:   10.0.1
+[debug] [2022-01-08T08:20:52.843Z] Platform:      darwin
+[debug] [2022-01-08T08:20:52.843Z] Node Version:  v16.13.0
+[debug] [2022-01-08T08:20:52.844Z] Time:          Sat Jan 08 2022 13:50:52 GMT+0530 (India Standard Time)
+[debug] [2022-01-08T08:20:52.844Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-01-08T08:20:52.911Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-08T08:20:52.912Z] > authorizing via signed-in user (kamal1991kumar@gmail.com)
+[debug] [2022-01-08T08:20:52.912Z] [iam] checking project user-management-firebase for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-01-08T08:20:52.914Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/user-management-firebase:testIamPermissions  
+ {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-01-08T08:20:54.847Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 08 Jan 2022 08:20:54 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1366","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-08T08:20:54.849Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/user-management-firebase/serviceAccounts/user-management-firebase@appspot.gserviceaccount.com:testIamPermissions  
+ {"permissions":["iam.serviceAccounts.actAs"]}
+[debug] [2022-01-08T08:20:56.484Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 08 Jan 2022 08:20:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-08T08:20:56.485Z] > refreshing access token with scopes: []
+[debug] [2022-01-08T08:20:56.485Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-01-08T08:20:56.674Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","date":"Sat, 08 Jan 2022 08:20:56 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-08T08:20:56.735Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/user-management-firebase [none]
+[debug] [2022-01-08T08:20:57.315Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/user-management-firebase 200
+[debug] [2022-01-08T08:20:57.315Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/user-management-firebase {"projectId":"user-management-firebase","projectNumber":"954602388955","displayName":"user-management-firebase","name":"projects/user-management-firebase","resources":{"hostingSite":"user-management-firebase-3241a","storageBucket":"user-management-firebase.appspot.com","locationId":"us-central"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'user-management-firebase'...
+[info] 
+[info] i  deploying firestore, functions, hosting 
+[debug] [2022-01-08T08:20:57.479Z] TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received undefined
+    at new NodeError (node:internal/errors:371:5)
+    at validateString (node:internal/validators:119:11)
+    at Object.join (node:path:1172:7)
+    at Config.path (/Users/kamal_kumar_xeb/.nvm/versions/node/v16.13.0/lib/node_modules/firebase-tools/lib/config.js:115:45)
+    at getChildEnvironment (/Users/kamal_kumar_xeb/.nvm/versions/node/v16.13.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:50:49)
+    at runTargetCommands (/Users/kamal_kumar_xeb/.nvm/versions/node/v16.13.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:71:14)
+    at /Users/kamal_kumar_xeb/.nvm/versions/node/v16.13.0/lib/node_modules/firebase-tools/lib/deploy/lifecycleHooks.js:122:24
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+[error] 
+[error] Error: An unexpected error has occurred.

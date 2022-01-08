@@ -1,0 +1,37 @@
+.fieldGroup {
+    margin: 0 0 25px;
+    &__fieldset {
+        background: #fff;
+        border-radius: 3px;
+        padding:15px;
+    }
+    &__label {
+        padding: 0 5px;
+        font-weight: 700;
+    }
+    &__input {
+        width: 100%;
+        background: none;
+        border: none;
+        font-size: 16px;
+        color: #111;
+    }
+    &__error {
+        font-size: 12px;
+        padding: 3px;
+        background: #ca372c;
+        color: #fff;
+        margin-top: -3px;
+        border-radius: 0 0 3px 3px;
+    }
+    $el:&;
+    &--hasError {
+        color: #f44336;
+        #{$el}__input {
+            color: #f44336;
+        }
+        #{$el}__fieldset {
+            border-color: #f44336;
+        }
+    }
+}

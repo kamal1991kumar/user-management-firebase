@@ -1,0 +1,22 @@
+.userProfile {
+    &__page{
+        padding: 0;
+        @media (min-width: 680px) {
+            height: 100%;
+        }
+    }
+    &__logout {
+        text-align: center;
+        &__btn {
+            background: #f1f1f1;
+            color: #525252;
+            border:solid 2px #6c6c6c;
+            border-top: none;
+            font-size: 14px;
+            padding: 10px;
+            font-weight: 700;
+            text-transform: uppercase;
+            border-radius: 0 0 3px 3px;
+        }
+    }
+}

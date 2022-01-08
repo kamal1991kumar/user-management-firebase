@@ -1,0 +1,36 @@
+
+.commonForm {
+    &__page {
+        padding: 15px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__wrapper {
+        max-width: 680px;
+        width: 100%;
+        padding: 30px;
+        border-radius: 5px;
+        background-color: #f1f1f1;
+    }
+    &__heading {
+        font-size: 24px;
+        padding: 0 10px;
+        font-weight: 700;
+    }
+    &__btn {
+        background: #f1f1f1;
+        color: #525252;
+        border:solid 2px #6c6c6c;
+        font-size: 14px;
+        padding: 10px;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-radius: 3px;
+        &:disabled {
+            cursor: not-allowed;
+            opacity: .5;
+        }
+    }
+}
